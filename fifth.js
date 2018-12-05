@@ -26,12 +26,12 @@ function fifth1() {
 
 function fifth2(){
   let minLength = 999999;
-  let aplhabet = 'ABCDEFGHIKLMNOPQRSTVXYZ';
+  let alphabet = 'ABCDEFGHIKLMNOPQRSTVXYZ';
 
-  for (let i = 0; i < aplhabet.length; i++) {
+  for (letter of alphabet) {
     let newstr = '';
-    newstr = input5.split(aplhabet[i]).join('');
-    newstr = newstr.split(aplhabet[i].toLowerCase()).join('');
+    newstr = test5.split(letter).join('');
+    newstr = newstr.split(letter.toLowerCase()).join('');
     let reacted = react(newstr);
     minLength = reacted.length < minLength ? reacted.length : minLength;
   }
@@ -40,4 +40,4 @@ function fifth2(){
 };
 
 //console.log(fifth1());
-//console.log(fifth2());
+console.log(fifth2());
